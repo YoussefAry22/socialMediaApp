@@ -1,18 +1,19 @@
 package com.twd.SpringSecurityJWT.entity;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import jakarta.persistence.*;
 import lombok.Data;
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "interaction")
-public class Interaction {
+@Table(name = "participation")
+public class Participation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDateTime creationDate;
+    private LocalDateTime participationDate;
 
 
     @ManyToOne
@@ -20,17 +21,16 @@ public class Interaction {
     private OurUsers user;
 
     @ManyToOne
-    @JoinColumn(name = "post_id")
-    private Post post;
+    @JoinColumn(name = "event_id")
+    private Event event;
 
-    // Constructors, getters, and setters
     @Override
     public String toString() {
         return "Interaction{" +
                 "id=" + id +
-                ", creationDate=" + creationDate +
+                ", participationDate=" + participationDate +
                 ", user=" + (user != null ? user.getId() : null) +
-                ", post=" + (post != null ? post.getId() : null) +
+                ", post=" + (event != null ? event.getId() : null) +
                 '}';
     }
 }

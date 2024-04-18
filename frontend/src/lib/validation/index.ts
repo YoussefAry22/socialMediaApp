@@ -50,3 +50,13 @@ export const ProfilValidation = z.object({
   filiere: z.string(),
   file: z.custom<File[]>(),
 });
+//////////////
+export const EventValidation = z.object({
+  eventName: z.string().max(30, { message: "Maximum 30 characters" }),
+  eventDescription: z.string().max(500, { message: "Maximum 500 characters" }),
+  location: z.string().max(30, { message: "Maximum 30 characters" }),
+  organizer: z.string().max(30, { message: "Maximum 30 characters" }),
+  eventDate:  z.string().max(20, { message: "Enter a valide date !" }),
+  file: z.custom<File[]>(),
+});
+///////////////

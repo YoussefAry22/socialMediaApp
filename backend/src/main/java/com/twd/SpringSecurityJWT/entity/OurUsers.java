@@ -33,6 +33,14 @@ public class OurUsers implements UserDetails {
     private String bio;
     private String image;
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Event> event = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user")
+    private List<Participation> participation = new ArrayList<>();
+
+    ///////
+
     @JsonBackReference
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Post> posts = new ArrayList<>();

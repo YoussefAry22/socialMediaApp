@@ -24,7 +24,6 @@ import { useEffect, useState } from "react";
 
 type PostFormProps = {
   post?: Models.Document;
-  action: "Create" | "Update";
 };
 
 
@@ -39,7 +38,7 @@ interface UserPost {
   creationdate: string;
 }
 
-const UpdatePostForm  = ({ post, action }: PostFormProps) => {
+const UpdatePostForm  = ({ post }: PostFormProps) => {
   const [userPost, setUserPost] = useState<UserPost>();
   const [imageURL, setImageURL] = useState<string>('');
   const navigate = useNavigate();

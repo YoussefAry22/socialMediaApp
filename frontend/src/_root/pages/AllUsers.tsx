@@ -31,15 +31,9 @@ const AllUsers = () => {
     return <Loader />;
   }
 
-
-  console.log("0000")
-  console.log(users)
-
-
   return (
     <div className="common-container">
       
-
     <div className="user-container">
 
         <h2 className="h3-bold md:h2-bold text-left w-full">All Users</h2>

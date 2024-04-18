@@ -190,7 +190,7 @@ const PostDetails = () => {
             <div className="flex-center gap-4 ">
               <Button
                 onClick={() => handleDelete(post?.postId)} variant="ghost"
-                className={`ost_details-delete_btn ${parseInt(user.id, 10) === post?.userId || "hidden"}`}>
+                className={`post_details-delete_btn ${parseInt(user.id, 10) === post?.userId || "hidden"}`}>
                 <img
                   src={"/assets/icons/delete.svg"}
                   alt="delete"

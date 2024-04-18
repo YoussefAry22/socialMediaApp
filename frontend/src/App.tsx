@@ -14,6 +14,8 @@ import EditPost from './_root/pages/EditPost';
 import Profile from './_root/pages/Profile';
 import UpdateProfile from './_root/pages/UpdateProfile';
 import PostDetails from './_root/pages/PostDetails';
+import CreateEvent from './_root/pages/CreateEvent';
+import EventDetails from './_root/pages/EventDetails';
 
 
 const App = () => {
@@ -29,7 +31,7 @@ const App = () => {
             {/* private routes */}
             <Route element={<RootLayout />}>
                 <Route index element={<Home />} />
-                <Route path="/explore" element={<Explore />} />
+                <Route path="/events" element={<Explore />} />
                 <Route path="/saved" element={<Saved />} />
                 <Route path="/all-users" element={<AllUsers />} />
                 <Route path="/create-post" element={<CreatePost />} />
@@ -38,7 +40,8 @@ const App = () => {
                 <Route path="/profile/:id/" element={<Profile />} />
                 <Route path="/update-profile/" element={<UpdateProfile />} />
                 <Route path="/update/" element={<UpdateProfile />} />
-
+                <Route path="/create-event/" element={<CreateEvent />} />
+                <Route path="/events/:id" element={<EventDetails />} />
 
 
             </Route> 
