@@ -18,7 +18,7 @@ type EventFormProps = {
     event?: Models.Document;
 };
 
-const EventForm = ({ event }: EventFormProps) => {
+const UpdateEventForm = ({ event }: EventFormProps) => {
     const navigate = useNavigate();
     const { toast } = useToast();
     const { user } = useUserContext();
@@ -49,7 +49,7 @@ const EventForm = ({ event }: EventFormProps) => {
 
             const token = localStorage.getItem("accessToken");
             const response = await axios.post(
-                "http://localhost:8080/users/events/create",
+                "http://localhost:8080/users/events/update",
                 formData,
                 {
                     headers: {
@@ -63,7 +63,7 @@ const EventForm = ({ event }: EventFormProps) => {
                 toast({
                     title: "Event created successfully ✔",
                 });
-                navigate("/");
+                navigate("/events");
             } else {
                 toast({
                     title: "Please try again",
@@ -167,7 +167,7 @@ const EventForm = ({ event }: EventFormProps) => {
                     name="file"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel className="shad-form_label">Add Picture :</FormLabel>
+                            <FormLabel className="shad-form_label">Add picture : </FormLabel>
                             <FormControl>
                                 <FileUploader
                                     fieldChange={field.onChange}
@@ -184,7 +184,7 @@ const EventForm = ({ event }: EventFormProps) => {
                         Cancel
                     </Button>
                     <Button type="submit" className="shad-button_primary whitespace-nowrap">
-                        Add Event
+                        Update Event
                     </Button>
                 </div>
             </form>
@@ -193,4 +193,4 @@ const EventForm = ({ event }: EventFormProps) => {
     );
 };
 
-export default EventForm;
+export default UpdateEventForm;

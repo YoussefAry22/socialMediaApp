@@ -51,7 +51,7 @@ const Explore = () => {
   if (isLoading) {
     return <Loader />;
   }
-console.log("@@@@")
+  console.log("@@@@")
   console.log(events)
 
   return (

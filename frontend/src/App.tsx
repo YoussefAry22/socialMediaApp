@@ -16,6 +16,7 @@ import UpdateProfile from './_root/pages/UpdateProfile';
 import PostDetails from './_root/pages/PostDetails';
 import CreateEvent from './_root/pages/CreateEvent';
 import EventDetails from './_root/pages/EventDetails';
+import EditEvent from './_root/pages/EditEvent';
 
 
 const App = () => {
@@ -39,10 +40,9 @@ const App = () => {
                 <Route path="/posts/:id" element={<PostDetails />} />
                 <Route path="/profile/:id/" element={<Profile />} />
                 <Route path="/update-profile/" element={<UpdateProfile />} />
-                <Route path="/update/" element={<UpdateProfile />} />
                 <Route path="/create-event/" element={<CreateEvent />} />
                 <Route path="/events/:id" element={<EventDetails />} />
-
+                <Route path="/update-event/:id" element={<EditEvent />} />
 
             </Route> 
 

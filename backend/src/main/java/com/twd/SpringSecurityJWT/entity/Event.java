@@ -2,6 +2,7 @@ package com.twd.SpringSecurityJWT.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import jakarta.persistence.*;
 
@@ -29,9 +30,10 @@ public class Event {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    @JsonIgnore
+    @JsonBackReference
     private OurUsers user;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "event")
     private List<Participation> participation = new ArrayList<>();
 
