@@ -1,6 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+backend/eventImg/*
+backend/postimguploads/*
+backend/profileimage/*
 # Editor-based HTTP Client requests
 /httpRequests/
 # Datasource local storage ignored files
