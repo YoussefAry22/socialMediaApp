@@ -18,6 +18,7 @@ import java.util.List;
 public class EventService {
 
     private static final String UPLOAD_DIR = "C:\\Users\\arway\\Desktop\\New folder (2)\\App-Social-Media\\backend\\eventImg"; // Update this with your upload directory path
+//private static final String UPLOAD_DIR = "C:\\Users\\dell\\Desktop\\App_Social_Media\\backend\\eventImg"; // Update this with your upload directory path
 
     @Autowired
     private final EventRepo eventRepository;

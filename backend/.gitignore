@@ -10,9 +10,6 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-eventImg/*
-postimguploads/*
-profileimage/*
 # Package Files #
 *.jar
 *.war

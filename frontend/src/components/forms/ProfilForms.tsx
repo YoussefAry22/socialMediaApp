@@ -64,10 +64,10 @@ const ProfileForms = () => {
         toast({
           title: "Please try again",
         });
-      } else {
-        toast({
-          title: "Profile updated successfully ✔",
-        });
+        //navigate('/');
+
+        // If error occurs, throw the error
+        throw error.response.data || error.message;
       }
       // If successful, return success message
       navigate("/");
@@ -82,7 +82,7 @@ const ProfileForms = () => {
     }
   };
 
-
+  
   return (
     <Form {...form}>
       <form
@@ -190,11 +190,11 @@ const ProfileForms = () => {
                 <select className="shad-input" {...field}>
                   <option value="Undefined">Select Filiere</option>
                   <option value="Informatique">Génie Informatique</option>
-                  <option value="Eléctrique">Génie Eléctrique</option>
                   <option value="Mathématique">Génie Mathématique</option>
                   <option value="Industriel">Génie Industriel</option>
                   <option value="Eléctrique">Génie Eléctrique</option>
                   <option value="Mécanique">Génie Mécanique</option>
+                  <option value="Civil">Génie Civil</option>
                 </select>
               </FormControl>
               <FormMessage className="shad-form_message" />
