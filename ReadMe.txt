@@ -33,3 +33,8 @@ Mot de passe: azerty123
 *****************Authors*****************
 
 ===========> AROUAY Youssef & MABROUK Youssef
+
+## Interfaces
+
+### Signup Screen
+![Signup Screen](Interfaces/Signup.png)
