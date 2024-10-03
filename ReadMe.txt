@@ -32,9 +32,27 @@ Mot de passe: azerty123
 
 *****************Authors*****************
 
-===========> AROUAY Youssef & MABROUK Youssef
+===========> Developped by AROUAY Youssef & MABROUK Youssef
 
-## Interfaces
+## UML 
+
+### Diagramme de classe 
+![DC Screen](interfaces/DC.png)
+### Diagramme de cas d'utilisation Screen
+![DCU Screen](interfaces/DCUf.png)
+
+## Some Interfaces
 
 ### Signup Screen
-![Signup Screen](Interfaces/Signup.png)
+![Signup Screen](interfaces/signup.png)
+### Signin Screen
+![Signin Screen](interfaces/signin.png)
+### Profile Screen
+![Profile Screen](interfaces/profile1.png)
+![Profile Screen](interfaces/profile2.png)
+### Post Detail Screen
+![Post Detail Screen](interfaces/postDetail.png)
+### Event Page Screen
+![Event Page Screen](interfaces/eventPage.png)
+### Users Screen
+![Users Screen](interfaces/users.png)
