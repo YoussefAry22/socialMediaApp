@@ -44,7 +44,7 @@ Mot de passe: azerty123
 ## Some Interfaces
 
 ### Signup Screen
-![Signup Screen](interfaces/signup.png)
+![Signup Screen](socialMediaApp/interfaces/signup.png)
 ### Signin Screen
 ![Signin Screen](interfaces/signin.png)
 ### Profile Screen
